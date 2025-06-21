@@ -1,47 +1,39 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19741568&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+## MongoDB Fundamentals Assignment
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+### Student Info
 
-## Assignment Overview
+**Name:** Ivy Muthoni
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+###  MongoDB Setup
 
-## Getting Started
+* **Database Type:** MongoDB Atlas
+* **Connection Tool:** MongoDB Compass
+* **Cloud Cluster:** Cluster0009
+* **Authentication:** Username/password connection string
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
 
-## Files Included
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+### Tools Used
 
-## Requirements
+* **Code Editor:** Visual Studio Code
+* **MongoDB Client:** MongoDB Compass
+* **Node Runtime:** Node.js v22.14.0
+* **Shell Environment:** Windows Subsystem for Linux (WSL)
+* **Terminal:** PowerShell & Ubuntu Terminal
+* **Version Control:** Git (via WSL)
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
 
-## Submission
+### Issues Faced
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+* Initial attempts to clone the GitHub repo failed due to `git` not being installed in PowerShell; resolved by using WSL.
+* MongoDB local installation failed due to missing dependencies (e.g., `libssl1.1`); switched to MongoDB Atlas instead.
+* Encountered authentication and URI formatting issues when connecting to Atlas from Compass (password special characters needed URL encoding).
+* Resolved package issues (`mongodb` module not found) by running `npm install mongodb`.
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
 
-## Resources
+### Notes
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+* Successfully connected Atlas to Compass and ran queries and aggregation pipelines.
+* Populated the database using the provided `insert_books.js` script.
+* Created `queries.js` with all required MongoDB operations.
+
